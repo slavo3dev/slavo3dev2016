@@ -249,7 +249,7 @@ var work = {
      "title": "General Manager",
      "location": "Belgrade, Serbia",
      "dates": "Jun, 2005 - Aug, 2010",
-     "url": "https://www.mcdsecurity.com/",
+     "url": "http://www.mimicom24.com/",
      "description": "Executed integrated advertising campaign across multiple media channels. Built financial model for new business unit. Developed department's first incentive performance plan which motivated staff and resulted in a 23% increase in sales. I was responsible - Troubleshot and maintained all networking devices and infrastructure across the enterprise including switches, routers and firewall."
    },
    {
@@ -257,7 +257,7 @@ var work = {
      "title": "System/Network Administrator",
      "location": "Belgrade, Serbia",
      "dates": "Feb, 2002 - Jun, 2005",
-     "url": "https://www.mcdsecurity.com",
+     "url": "https://www.mimicom24.com",
      "description": "I was responsible for configuration and maintanace of Micorsoft Servers and Cisco Network equipment (Switches and Routers).Implemented and maintained firewalls, series switches and security appliances."
    }
      ],
