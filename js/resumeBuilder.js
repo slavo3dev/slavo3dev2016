@@ -258,7 +258,7 @@ var work = {
      "location": "Belgrade, Serbia",
      "dates": "Feb, 2002 - Jun, 2005",
      "url": "https://www.mimicom24.com",
-     "description": "I was responsible for configuration and maintanace of Micorsoft Servers and Cisco Network equipment (Switches and Routers).Implemented and maintained firewalls, series switches and security appliances."
+     "description": "I was responsible for configuration and maintenance of Microsoft Servers and Cisco Network equipment (Switches and Routers).Implemented and maintained firewalls, series switches and security appliances."
    }
      ],
 "display": function() {
