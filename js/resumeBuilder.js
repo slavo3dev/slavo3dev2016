@@ -10,8 +10,8 @@ var bio = {
       "twitter": "@OurHealthyDay", 
       "location": "Miami, FL" 
     },
-"welcomeMessage": "Welcome to my Profile",
-"skills": ["Python", "JavaScript", "Java", "jQuery", "HTML", "CSS", "Bootstrap", "Computer System Specialist", "Networking", "Windows", "System Admin" ],
+"welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
+"skills": ["JavaScript", "jQuery", "HTML", "CSS", "Bootstrap", "Angular", "Python", "Swift" ],
 "biopic": "images/profile.jpg",
 "display": function() {
 
@@ -77,49 +77,49 @@ var education = {
      "title": "Microsoft Certified Proffesional",
      "school": "Microsoft",
      "date": "05-2008",
-     "url": "https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx"
-   },
-        {
-     "title": "Intro to HTML and CSS",
-     "school": "Udacity",
-     "date": "03-2016",
-     "url": "https://www.udacity.com/course/intro-to-html-and-css--ud304"
+     "url":"https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx"
    },
    {
-     "title": "Responsive Web Design Fundamentals",
+     "title": "Front End Web Developer",
      "school": "Udacity",
-     "date": "03-2016",
-     "url": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893"
+     "date": "01-2017",
+     "url":"https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
    },
    {
-     "title": "Responsive Images",
-     "school": "Udacity",
-     "date": "03-2016",
-     "url": "https://www.udacity.com/course/responsive-images--ud882"
+     "title": "HTML, CSS & JavaScript Certified",
+     "school": "Coursera",
+     "date": "05-2016",
+     "url":"https://www.coursera.org/account/accomplishments/certificate/H8AG2WBC5E93"
    },
    {
-     "title": "JavaScript Basics",
-     "school": "Udacity",
-     "date": "03-2016",
-     "url": "https://www.udacity.com/course/javascript-basics--ud804"
+    "title": "Front End Developmet",
+     "school": "FreeCodeCamp",
+     "date": "09-2016",
+     "url": "https://www.freecodecamp.com/slavo7"
    },
    {
-     "title": "Intro to jQuery",
-     "school": "Udacity",
-     "date": "03-2016",
-     "url": "https://www.udacity.com/course/intro-to-jquery--ud245"
+     "title": "The Web Developer Bootcamp(nodejs)",
+     "school": "Udemy",
+     "date": "08-2016",
+     "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
-     "title": "Object-Oriented JavaScript",
-     "school": "Udacity",
-     "date": "03-2016",
-     "url": "https://www.udacity.com/course/object-oriented-javascript--ud015"
+     "title": "The Complete Digital Marketing Course",
+     "school": "Udemy",
+     "date": "11-2016",
+     "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
-     "title": "HTML5 Canvas",
-     "school": "Udacity",
+     "title": "iOS10 & Swift3",
+     "school": "DevsLopes",
      "date": "03-2016",
-     "url": "https://www.udacity.com/course/html5-canvas--ud292"
+     "url": "https://www.udemy.com/user/slavoljub-popovic/"
+   },
+   {
+     "title": "Moder React with Redux",
+     "school": "Udemy",
+     "date": "12-2016",
+     "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
      "title": "Intro to Computer Science",
@@ -131,31 +131,13 @@ var education = {
      "title": "Programming Foundations with Python",
      "school": "Udacity",
      "date": "05-2014",
-     "url": "https://www.udacity.com/course/programming-foundations-with-python--ud036"
-   },
-   {
-     "title": "Android Development for Beginners",
-     "school": "Udacity",
-     "date": "08-2015",
-     "url": "https://www.udacity.com/course/android-development-for-beginners--ud837"
+     "url":"https://www.udacity.com/course/programming-foundations-with-python--ud036"
    },
    {
      "title": "Computer Networking",
      "school": "Udacity/Georgia Tech",
      "date": "01-2015 - 12-2015",
      "url": "https://www.udacity.com/course/computer-networking--ud436"
-   },
-   {
-     "title": "Software Development Process",
-     "school": "Udacity/Georgia Tech",
-     "date": "03-2015 - 12-2015",
-     "url": "https://www.udacity.com/course/software-development-process--ud805"
-   },
-   {
-     "title": "Ruby Essential Training",
-     "school": "Lynda",
-     "date": "01-2016",
-     "url": "https://www.lynda.com/Ruby-tutorials/essential-training/47905-2.html"
    },
 
      ],
@@ -173,12 +155,13 @@ var education = {
             var mySchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
             var myMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors[0]);
             var URL = HTMLonlineURL.replace("%data", education.schools[school].url);
+            
 
             $("#education").append(mySchool + mySchoolDegree);
             $("#education").append(mySchoolDates);
             $("#education").append(mySchoolLocation);
             $("#education").append(myMajor);
-            $("#education").append(URL);
+            //$("#education").append(URL); looks better 
 
         }
     }
@@ -197,7 +180,7 @@ var education = {
 
         $("#education").append(courseTitle + schl);
         $("#education").append(courseDates);
-        $("#education").append(URL);
+        //$("#education").append(URL);  looks better 
             }
         }
     }
@@ -211,20 +194,20 @@ var work = {
         
      {
      "employer": "MimiCom24",
-     "title": "Founder",
+     "title": "Founder/Web Developer",
      "location": "Miami, Fl",
      "dates": "in progress",
      "url": "http://www.mimicom24.com/",
-     "description": "In December 2014, I have founded MimiCom24. Company focused on Web and Mobile Application development.MimiCom24 strives to Engineer Long Lasting high quality Software. As a founder I have a various responsibilities. From negotiation with potential customers, to development and testing software solutions."
+     "description": "In January 2016, I have founded MimiCom24. Company focused on Web and Mobile Application development.MimiCom24 strives to Engineer Long Lasting high quality Software. As a founder I have a various responsibilities. From negotiation with potential customers, to development and testing software solutions."
    },
     
     {
      "employer": "OurHealthyday",
-     "title": "Web Developer",
+     "title": "Wellness Consultant",
      "location": "Santa Clarita, CA",
      "dates": "Oct, 2008 - in progress",
      "url": "http://www.ourhealthyday.com/",
-     "description": "Frontend and Backend lead developer and team leader on various international projects. Web applications and niche social networks. API development for mobile applications. Websites and web platforms for real estate and brokerage companies."
+     "description": "My passion is to help people to achieve there weight loss goals."
    },
     
     {
