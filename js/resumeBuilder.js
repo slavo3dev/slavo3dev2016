@@ -276,9 +276,23 @@ var projects = {
       "title": "OurHealthyDay", 
       "dates": "March, 2012 - in progress",
       "url": "http://www.ourhealthyday.com/",
-      "description": "Frontend and Backend lead developer and team leader on various international projects. Web applications and niche social networks. API development for mobile applications. Websites and web platforms for real estate and brokerage companies. I am working closely with social media team on WordPress blogs and social media marketing.",
+      "description": "HTML, CSS, JavaScript, WordPress.",
       "images": ["images/ourhealthyday.gif", "images/sallimoser.gif", "images/soflolives.gif", "images/pzmedenjak.gif"]
-   }
+   },
+  {
+      "title": "MimiCom24", 
+      "dates": "Jun, 2016 - in progress",
+      "url": "http://www.mimicom24.com/",
+      "description": "HTML, CSS, jQuery, JavaScript, Bootstrap",
+      "images": ["images/ourhealthyday.gif"]
+   },
+      {
+      "title": "Sal Limo Service", 
+      "dates": "Feb, 2015 - in progress",
+      "url": "http://www.ourhealthyday.com/",
+      "description": "HTML, CSS, JavaScript, WordPress",
+      "images": ["images/sallimo.gif"]
+   },
      ],
 "display": function() {
     if (projects.projects.length > 0) {
