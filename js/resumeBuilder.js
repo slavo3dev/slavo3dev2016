@@ -298,7 +298,7 @@ var projects = {
       "dates": "Jan, 2016 - in progress",
       "url": "http://www.soflolives.com/",
       "description": "HTML, CSS, JavaScript, WordPress",
-      "images": ["images/sallimo.png"]
+      "images": ["images/soflolives.png"]
    },
 
      ],
