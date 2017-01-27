@@ -284,15 +284,23 @@ var projects = {
       "dates": "Jun, 2016 - in progress",
       "url": "http://www.mimicom24.com/",
       "description": "HTML, CSS, jQuery, JavaScript, Bootstrap",
-      "images": ["images/ourhealthyday.gif"]
+      "images": ["images/mimicom.png"]
    },
-      {
+   {
       "title": "Sal Limo Service", 
       "dates": "Feb, 2015 - in progress",
-      "url": "http://www.ourhealthyday.com/",
+      "url": "http://www.sallimoservice.com/",
       "description": "HTML, CSS, JavaScript, WordPress",
-      "images": ["images/sallimo.gif"]
+      "images": ["images/sallimo.png"]
    },
+  {
+      "title": "So Flo Lives Real State WebSite", 
+      "dates": "Jan, 2016 - in progress",
+      "url": "http://www.soflolives.com/",
+      "description": "HTML, CSS, JavaScript, WordPress",
+      "images": ["images/sallimo.png"]
+   },
+
      ],
 "display": function() {
     if (projects.projects.length > 0) {
