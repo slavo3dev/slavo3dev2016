@@ -1,19 +1,19 @@
 
 var bio = {
 
-"name": "Slavo Popovich",
-"role": "Web Developer",
-"contacts": {
-      "mobile": "+1(561) 283 6675",
-      "email": "slavo@mimicom24.com",
-      "github": "https://github.com/slavo7",
-      "twitter": "@OurHealthyDay", 
-      "location": "Miami, FL" 
-    },
-"welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
-"skills": ["JavaScript", "jQuery", "HTML", "CSS", "Bootstrap", "Angular", "Python", "Swift" ],
-"biopic": "images/profile.jpg",
-"display": function() {
+        "name": "Slavo Popovich",
+        "role": "Web Developer",
+        "contacts": {
+            "mobile": "+1(561) 283 6675",
+            "email": "slavo@mimicom24.com",
+            "github": "https://github.com/slavo7",
+            "twitter": "@OurHealthyDay", 
+            "location": "Miami, FL" 
+            },
+        "welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
+        "skills": ["JavaScript", "jQuery", "HTML", "CSS", "Bootstrap", "Angular", "Python", "Swift" ],
+        "biopic": "images/profile.jpg",
+        "display": function() {
 
     var myName = HTMLheaderName.replace("%data%", bio.name);
     $("#name-title").append(myName);
@@ -24,22 +24,22 @@ var bio = {
     var myMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     
 
-    $("#topContacts").append(myMobile);
-    $("#footerContacts").append(myMobile);
+    $("#topContacts, #footerContacts").append(myMobile);
+    //$("#footerContacts").append(myMobile);
     var myEmail = HTMLemail.replace("%data%", bio.contacts.email);
-    $("#topContacts").append(myEmail);
-    $("#footerContacts").append(myEmail);
+    $("#topContacts, #footerContacts").append(myEmail);
+    //$("#footerContacts").append(myEmail);
     var myGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-    $("#topContacts").append(myGithub);
-    $("#footerContacts").append(myGithub);
+    $("#topContacts, #footerContacts").append(myGithub);
+    ///$("#footerContacts").append(myGithub);
     
     var myTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    $("#topContacts").append(myTwitter);
-    $("#footerContacts").append(myTwitter);
+    $("#topContacts, #footerContacts").append(myTwitter);
+    //$("#footerContacts").append(myTwitter);
     
     var myLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-    $("#topContacts").append(myLocation);
-    $("#footerContacts").append(myLocation);
+    $("#topContacts, #footerContacts").append(myLocation);
+    //$("#footerContacts").append(myLocation);
 
     var myPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(myPic);
@@ -47,10 +47,15 @@ var bio = {
     if (bio.skills.length > 0) {
 
         $("#header").append(HTMLskillsStart);
-        for (var s in bio.skills) {
+        /*for (var s in bio.skills) {
 
             var skill = HTMLskills.replace("%data%", bio.skills[s]);
             $("#skills").append(skill);
+            }*/
+            for (var s = 0; s < bio.skills.length; s++){
+            var skill = HTMLskills.replace("%data%", bio.skills[s]);
+            $("#skills").append(skill);
+            
             }
         }
     }
@@ -76,67 +81,67 @@ var education = {
      {
      "title": "Microsoft Certified Proffesional",
      "school": "Microsoft",
-     "date": "05-2008",
+     "dates": "05-2008",
      "url":"https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx"
    },
    {
      "title": "Front End Web Developer",
      "school": "Udacity",
-     "date": "01-2017",
+     "dates": "01-2017",
      "url":"https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
    },
    {
      "title": "HTML, CSS & JavaScript Certified",
      "school": "Coursera",
-     "date": "05-2016",
+     "dates": "05-2016",
      "url":"https://www.coursera.org/account/accomplishments/certificate/H8AG2WBC5E93"
    },
    {
     "title": "Front End Developmet",
      "school": "FreeCodeCamp",
-     "date": "09-2016",
+     "dates": "09-2016",
      "url": "https://www.freecodecamp.com/slavo7"
    },
    {
      "title": "The Web Developer Bootcamp(nodejs)",
      "school": "Udemy",
-     "date": "08-2016",
+     "dates": "08-2016",
      "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
      "title": "The Complete Digital Marketing Course",
      "school": "Udemy",
-     "date": "11-2016",
+     "dates": "11-2016",
      "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
      "title": "iOS10 & Swift3",
      "school": "DevsLopes",
-     "date": "03-2016",
+     "dates": "03-2016",
      "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
      "title": "Moder React with Redux",
      "school": "Udemy",
-     "date": "12-2016",
+     "dates": "12-2016",
      "url": "https://www.udemy.com/user/slavoljub-popovic/"
    },
    {
      "title": "Intro to Computer Science",
      "school": "Udacity",
-     "date": "03-2014",
+     "dates": "03-2014",
      "url": "https://www.udacity.com/course/intro-to-computer-science--cs101"
    },
    {
      "title": "Programming Foundations with Python",
      "school": "Udacity",
-     "date": "05-2014",
+     "dates": "05-2014",
      "url":"https://www.udacity.com/course/programming-foundations-with-python--ud036"
    },
    {
      "title": "Computer Networking",
      "school": "Udacity/Georgia Tech",
-     "date": "01-2015 - 12-2015",
+     "dates": "01-2015 - 12-2015",
      "url": "https://www.udacity.com/course/computer-networking--ud436"
    },
 
@@ -174,7 +179,7 @@ var education = {
         var cTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
         var courseTitle = cTitle.replace("#", education.onlineCourses[course].url);
         var schl = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-        var courseDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].date);
+        var courseDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
         var URL = HTMLonlineURL.replace("%data",
         education.onlineCourses[course].url);
 
@@ -277,7 +282,7 @@ var projects = {
       "dates": "March, 2012 - in progress",
       "url": "http://www.ourhealthyday.com/",
       "description": "HTML, CSS, JavaScript, WordPress.",
-      "images": ["images/ourhealthyday.gif", "images/sallimoser.gif", "images/soflolives.gif", "images/pzmedenjak.gif"]
+      "images": ["images/ourhealthyday.gif",]
    },
   {
       "title": "MimiCom24", 
@@ -303,7 +308,7 @@ var projects = {
 
      ],
 "display": function() {
-    if (projects.projects.length > 0) {
+    if(projects.projects.length > 0) {
 
         $("#projects").append(HTMLprojectStart);
         for(var proj in projects.projects) {
@@ -319,8 +324,8 @@ var projects = {
             $("#projects").append(projectDates);
             $("#projects").append(projectDescription);
             $("#projects").append(projectImg);
-            
-            }
+         
+        }
         }
     }
 };
