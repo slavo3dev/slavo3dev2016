@@ -47,11 +47,15 @@ var bio = {
     if (bio.skills.length > 0) {
 
         $("#header").append(HTMLskillsStart);
-        /*for (var s in bio.skills) {
 
+
+// In JavaScript, for-in loops can be used for objects, but should not be used for arrays. This is because the for-in loop passes the keys of each property. Array values do not have any keys.
+            /*for (var s in bio.skills) {
             var skill = HTMLskills.replace("%data%", bio.skills[s]);
             $("#skills").append(skill);
             }*/
+
+
             for (var s = 0; s < bio.skills.length; s++){
             var skill = HTMLskills.replace("%data%", bio.skills[s]);
             $("#skills").append(skill);
@@ -311,6 +315,8 @@ var projects = {
     if(projects.projects.length > 0) {
 
         $("#projects").append(HTMLprojectStart);
+
+        // In JavaScript, for-in loops can be used for objects, but should not be used for arrays. This is because the for-in loop passes the keys of each property. Array values do not have any keys.
        /* for(var proj in projects.projects) {
 
             var _project = HTMLprojectTitle.replace("%data%", projects.projects[proj].title);
@@ -339,7 +345,7 @@ var projects = {
           $("#projects").append(projectDates);
           $("#projects").append(projectDescription);
           $("#projects").append(projectImg);
-          
+
         });
         }
     }
