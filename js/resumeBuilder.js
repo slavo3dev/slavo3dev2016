@@ -276,7 +276,7 @@ var work = {
 /* Object that contains information about projects that person participated
 * and display() method to display data on the page */
 var projects = {
-"projects": [
+ "projects": [
      {
       "title": "OurHealthyDay", 
       "dates": "March, 2012 - in progress",
@@ -311,7 +311,7 @@ var projects = {
     if(projects.projects.length > 0) {
 
         $("#projects").append(HTMLprojectStart);
-        for(var proj in projects.projects) {
+       /* for(var proj in projects.projects) {
 
             var _project = HTMLprojectTitle.replace("%data%", projects.projects[proj].title);
             var myProject = _project.replace("#", projects.projects[proj].url);
@@ -325,7 +325,22 @@ var projects = {
             $("#projects").append(projectDescription);
             $("#projects").append(projectImg);
          
-        }
+        } */
+
+         projects.projects.forEach(function(proj) {
+          var _project = HTMLprojectTitle.replace("%data%", proj.title);
+          var myProject = _project.replace("#", proj.url);
+          var projectDates = HTMLprojectDates.replace("%data%", proj.dates);
+          var projectDescription = HTMLprojectDescription.replace("%data%", proj.description);
+          var projectImg = HTMLprojectImage.replace("%data%", proj.images[0]);
+
+
+          $("#projects").append(myProject);
+          $("#projects").append(projectDates);
+          $("#projects").append(projectDescription);
+          $("#projects").append(projectImg);
+          
+        });
         }
     }
 };
