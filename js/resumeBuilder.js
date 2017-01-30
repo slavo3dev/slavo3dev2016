@@ -368,8 +368,7 @@ $(document).click(function (loc) {
     logClicks(x, y);
 });
 
-// extras 
-$(document).ready(function () {
+
 //  ----- scrolling message loop -----
     var welcome = "";
     var word = "Slavoljub Popovic";
@@ -385,20 +384,4 @@ $(document).ready(function () {
       }, 500);
     }
 
-    // ----- back to top button -----
-	var pixelNumber = 300;
-	$(window).scroll(function() {
-	    if ( $(window).scrollTop() > pixelNumber) {
-	        $('.back-to-top').fadeIn('slow');
-	    } else {
-	        $('.back-to-top').fadeOut('slow');
-	    }
-	});
-	
-	$('.back-to-top').click(function() {
-	    $('html, body').animate({
-	        scrollTop: 0
-	    }, 700);
-	    return false;
-	});
-});
+ 
