@@ -367,3 +367,38 @@ $(document).click(function (loc) {
     var y = loc.pageY;
     logClicks(x, y);
 });
+
+// extras 
+$(document).ready(function () {
+//  ----- scrolling message loop -----
+    var welcome = "";
+    var word = "Slavoljub Popovic";
+    typingText();
+    function typingText (){
+        var index = 0;
+        var interval = setInterval(function() {
+        if (index !== word.length) {
+            welcome += word[index];
+            $("#name").html(welcome);
+            index++;
+        }
+      }, 500);
+    }
+
+    // ----- back to top button -----
+	var pixelNumber = 300;
+	$(window).scroll(function() {
+	    if ( $(window).scrollTop() > pixelNumber) {
+	        $('.back-to-top').fadeIn('slow');
+	    } else {
+	        $('.back-to-top').fadeOut('slow');
+	    }
+	});
+	
+	$('.back-to-top').click(function() {
+	    $('html, body').animate({
+	        scrollTop: 0
+	    }, 700);
+	    return false;
+	});
+});
