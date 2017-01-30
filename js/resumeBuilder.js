@@ -6,6 +6,7 @@ var bio = {
     "contacts": {
         "mobile": "+1(561) 283 6675",
         "email": "slavo@mimicom24.com",
+        "urlEmail":"mailto:slavo@mimicom24.com?Subject=Hello%20again",
         "github": "https://github.com/slavo7",
         "twitter": "@OurHealthyDay",
         "location": "Miami, FL"
@@ -26,10 +27,12 @@ var bio = {
 
         $("#topContacts, #footerContacts").append(myMobile);
         //$("#footerContacts").append(myMobile);
-        var myEmail = HTMLemail.replace("%data%", bio.contacts.email);
+        var myEmailURL = HTMLemail.replace("#", bio.contacts.urlEmail);
+        var myEmail = myEmailURL.replace(data, bio.contacts.email);
         $("#topContacts, #footerContacts").append(myEmail);
         //$("#footerContacts").append(myEmail);
-        var myGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+        var myGitHubUrl = HTMLgithub.replace("%data%", bio.contacts.github);
+        var myGithub = myGitHubUrl.replace("%data%", bio.contacts.github);
         $("#topContacts, #footerContacts").append(myGithub);
         ///$("#footerContacts").append(myGithub);
 
