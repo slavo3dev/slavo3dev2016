@@ -49,7 +49,7 @@ var bio = {
         $("#header").append(HTMLskillsStart);
 
 
-// In JavaScript, for-in loops can be used for objects, but should not be used for arrays. This is because the for-in loop passes the keys of each property. Array values do not have any keys.
+            // In JavaScript, for-in loops can be used for objects, but should not be used for arrays. This is because the for-in loop passes the keys of each property. Array values do not have any keys.
             /*for (var s in bio.skills) {
             var skill = HTMLskills.replace("%data%", bio.skills[s]);
             $("#skills").append(skill);
@@ -68,9 +68,7 @@ var bio = {
 
 var education = {
 
-"schools": [
-   
-    {
+"schools": [{
      "name": "The School of Electrical and Computer Engineering of Applied Studies",
      "location": "Belgrade, Serbia",
      "degree": "Bachelor of Appl.",
@@ -155,15 +153,15 @@ var education = {
     if (education.schools.length > 0) {
 
         $("#education").append(HTMLschoolStart);
-        for (var school in education.schools) {
-
-            var mySchoolURL = HTMLschoolName.replace("#", education.schools[school].url);
-            var mySchool = mySchoolURL.replace("%data%", education.schools[school].name);
-            var mySchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-            var mySchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-            var mySchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-            var myMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors[0]);
-            var URL = HTMLonlineURL.replace("%data", education.schools[school].url);
+       // for (var school in education.schools) {
+       education.schools.forEach(function(school){
+            var mySchoolURL = HTMLschoolName.replace("#", school.url);
+            var mySchool = mySchoolURL.replace("%data%", school.name);
+            var mySchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
+            var mySchoolDates = HTMLschoolDates.replace("%data%",school.dates);
+            var mySchoolLocation = HTMLschoolLocation.replace("%data%",school.location);
+            var myMajor = HTMLschoolMajor.replace("%data%",school.majors[0]);
+            var URL = HTMLonlineURL.replace("%data",school.url);
             
 
             $("#education").append(mySchool + mySchoolDegree);
@@ -172,25 +170,27 @@ var education = {
             $("#education").append(myMajor);
             //$("#education").append(URL); looks better 
 
-        }
+       });
     }
+
+
 
     if (education.onlineCourses.length > 0) {
 
     $("#education").append(HTMLonlineClasses);
-    for(var course in education.onlineCourses) {
-
-        var cTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
-        var courseTitle = cTitle.replace("#", education.onlineCourses[course].url);
-        var schl = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-        var courseDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+    //for(var course in education.onlineCourses) {
+    education.onlineCourses.forEach(function(course) {
+        var cTitle = HTMLonlineTitle.replace("%data%",course.title);
+        var courseTitle = cTitle.replace("#",course.url);
+        var schl = HTMLonlineSchool.replace("%data%", course.school);
+        var courseDates = HTMLonlineDates.replace("%data%", course.dates);
         var URL = HTMLonlineURL.replace("%data",
-        education.onlineCourses[course].url);
+        course.url);
 
         $("#education").append(courseTitle + schl);
         $("#education").append(courseDates);
         //$("#education").append(URL);  looks better 
-            }
+            });
         }
     }
 };
