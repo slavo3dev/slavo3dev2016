@@ -338,7 +338,7 @@ var projects = {
           var myProject = _project.replace("#", proj.url);
           var projectDates = HTMLprojectDates.replace("%data%", proj.dates);
           var projectDescription = HTMLprojectDescription.replace("%data%", proj.description);
-          var projectImg = HTMLprojectImage.replace("%data%", proj.images[0]);
+          var projectImg = HTMLprojectImage.replace("%data%", proj.images);
 
 
           $("#projects").append(myProject);
