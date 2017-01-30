@@ -203,9 +203,7 @@ var education = {
 * display() method to display data on the page */
 var work = {
 
-    "jobs": [
-
-        {
+    "jobs": [{
             "employer": "MimiCom24",
             "title": "Founder/Web Developer",
             "location": "Miami, Fl",
@@ -262,21 +260,21 @@ var work = {
         if (work.jobs.length > 0) {
 
             $("#workExperience").append(HTMLworkStart);
-            for (var job in work.jobs) {
-
-                var employer = HTMLworkEmployer.replace(data, work.jobs[job].employer);
-                var myEmployer = employer.replace("#", work.jobs[job].url);
-                var myTitle = HTMLworkTitle.replace(data, work.jobs[job].title);
-                var workDates = HTMLworkDates.replace(data, work.jobs[job].dates);
-                var workLocation = HTMLworkLocation.replace(data, work.jobs[job].location);
-                var workDescription = HTMLworkDescription.replace(data, work.jobs[job].description);
+            // for (var job in work.jobs) {
+               work.jobs.forEach(function(job){
+                var employer = HTMLworkEmployer.replace(data, job.employer);
+                var myEmployer = employer.replace("#", work.job.url);
+                var myTitle = HTMLworkTitle.replace(data,job.title);
+                var workDates = HTMLworkDates.replace(data,job.dates);
+                var workLocation = HTMLworkLocation.replace(data,job.location);
+                var workDescription = HTMLworkDescription.replace(data,job.description);
 
                 $("#workExperience").append(myEmployer + myTitle);
                 $("#workExperience").append(workDates);
                 $("#workExperience").append(workLocation);
                 $("#workExperience").append(workDescription);
 
-            }
+               });
         }
     }
 };
