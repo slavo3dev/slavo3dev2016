@@ -1,4 +1,4 @@
-
+var data = "%data%";
 var bio = {
 
         "name": "Slavo Popovich",
@@ -15,13 +15,13 @@ var bio = {
         "biopic": "images/profile.jpg",
         "display": function() {
 
-    var myName = HTMLheaderName.replace("%data%", bio.name);
+    var myName = HTMLheaderName.replace(data, bio.name);
     $("#name-title").append(myName);
-    var myRole = HTMLheaderRole.replace("%data%", bio.role);
+    var myRole = HTMLheaderRole.replace(data, bio.role);
     $("#name-title").append(myRole);
-    var welcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+    var welcomeMessage = HTMLwelcomeMsg.replace(data, bio.welcomeMessage);
     $("#header").append(welcomeMessage);
-    var myMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var myMobile = HTMLmobile.replace(data, bio.contacts.mobile);
     
 
     $("#topContacts, #footerContacts").append(myMobile);
@@ -156,12 +156,12 @@ var education = {
        // for (var school in education.schools) {
        education.schools.forEach(function(school){
             var mySchoolURL = HTMLschoolName.replace("#", school.url);
-            var mySchool = mySchoolURL.replace("%data%", school.name);
-            var mySchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
-            var mySchoolDates = HTMLschoolDates.replace("%data%",school.dates);
-            var mySchoolLocation = HTMLschoolLocation.replace("%data%",school.location);
-            var myMajor = HTMLschoolMajor.replace("%data%",school.majors[0]);
-            var URL = HTMLonlineURL.replace("%data",school.url);
+            var mySchool = mySchoolURL.replace(data, school.name);
+            var mySchoolDegree = HTMLschoolDegree.replace(data, school.degree);
+            var mySchoolDates = HTMLschoolDates.replace(data,school.dates);
+            var mySchoolLocation = HTMLschoolLocation.replace(data,school.location);
+            var myMajor = HTMLschoolMajor.replace(data,school.majors[0]);
+            var URL = HTMLonlineURL.replace(data,school.url);
             
 
             $("#education").append(mySchool + mySchoolDegree);
@@ -180,11 +180,11 @@ var education = {
     $("#education").append(HTMLonlineClasses);
     //for(var course in education.onlineCourses) {
     education.onlineCourses.forEach(function(course) {
-        var cTitle = HTMLonlineTitle.replace("%data%",course.title);
+        var cTitle = HTMLonlineTitle.replace(data,course.title);
         var courseTitle = cTitle.replace("#",course.url);
-        var schl = HTMLonlineSchool.replace("%data%", course.school);
-        var courseDates = HTMLonlineDates.replace("%data%", course.dates);
-        var URL = HTMLonlineURL.replace("%data",
+        var schl = HTMLonlineSchool.replace(data, course.school);
+        var courseDates = HTMLonlineDates.replace(data, course.dates);
+        var URL = HTMLonlineURL.replace(data,
         course.url);
 
         $("#education").append(courseTitle + schl);
@@ -260,12 +260,12 @@ var work = {
         $("#workExperience").append(HTMLworkStart);
         for(var job in work.jobs) {
 
-            var employer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+            var employer = HTMLworkEmployer.replace(data, work.jobs[job].employer);
             var myEmployer = employer.replace("#", work.jobs[job].url);
-            var myTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-            var workDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-            var workLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-            var workDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+            var myTitle = HTMLworkTitle.replace(data, work.jobs[job].title);
+            var workDates = HTMLworkDates.replace(data, work.jobs[job].dates);
+            var workLocation = HTMLworkLocation.replace(data, work.jobs[job].location);
+            var workDescription = HTMLworkDescription.replace(data, work.jobs[job].description);
 
             $("#workExperience").append(myEmployer + myTitle);
             $("#workExperience").append(workDates);
@@ -334,11 +334,11 @@ var projects = {
         } */
 
          projects.projects.forEach(function(proj) {
-          var _project = HTMLprojectTitle.replace("%data%", proj.title);
+          var _project = HTMLprojectTitle.replace(data, proj.title);
           var myProject = _project.replace("#", proj.url);
-          var projectDates = HTMLprojectDates.replace("%data%", proj.dates);
-          var projectDescription = HTMLprojectDescription.replace("%data%", proj.description);
-          var projectImg = HTMLprojectImage.replace("%data%", proj.images);
+          var projectDates = HTMLprojectDates.replace(data, proj.dates);
+          var projectDescription = HTMLprojectDescription.replace(data, proj.description);
+          var projectImg = HTMLprojectImage.replace(data, proj.images);
 
 
           $("#projects").append(myProject);
