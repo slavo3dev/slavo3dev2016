@@ -263,7 +263,7 @@ var work = {
             // for (var job in work.jobs) {
                work.jobs.forEach(function(job){
                 var employer = HTMLworkEmployer.replace(data, job.employer);
-                var myEmployer = employer.replace("#", work.job.url);
+                var myEmployer = employer.replace("#",job.url);
                 var myTitle = HTMLworkTitle.replace(data,job.title);
                 var workDates = HTMLworkDates.replace(data,job.dates);
                 var workLocation = HTMLworkLocation.replace(data,job.location);
