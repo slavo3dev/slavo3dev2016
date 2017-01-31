@@ -5,6 +5,7 @@ var bio = {
     "role": "Web Developer",
     "contacts": {
         "mobile": "+1(561) 283 6675",
+        "mobileUrl": "tel:15612836675",
         "email": "slavo@mimicom24.com",
         "urlEmail":"mailto:slavo@mimicom24.com?Subject=Hello%20again",
         "github": "slavo7",
@@ -23,9 +24,9 @@ var bio = {
         $("#name-title").append(myRole);
         var welcomeMessage = HTMLwelcomeMsg.replace(data, bio.welcomeMessage);
         $("#header").append(welcomeMessage);
-        var myMobile = HTMLmobile.replace(data, bio.contacts.mobile);
 
-
+        var myMobileUrl = HTMLmobile.replace("#", bio.contacts.mobileUrl);
+        var myMobile = myMobileUrl.replace(data, bio.contacts.mobile);
         $("#topContacts, #footerContacts").append(myMobile);
         //$("#footerContacts").append(myMobile);
         var myEmailURL = HTMLemail.replace("#", bio.contacts.urlEmail);
@@ -33,7 +34,7 @@ var bio = {
         $("#topContacts, #footerContacts").append(myEmail);
         //$("#footerContacts").append(myEmail);
         var myGitHubUrl = HTMLgithub.replace("#", bio.contacts.urlGitHub);
-        var myGithub = HTMLgithub.replace(data, bio.contacts.github);
+        var myGithub = myGitHubUrl.replace(data, bio.contacts.github);
         $("#topContacts, #footerContacts").append(myGithub);
         ///$("#footerContacts").append(myGithub);
 
