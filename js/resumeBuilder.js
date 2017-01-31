@@ -288,7 +288,7 @@ var projects = {
             "dates": "March, 2012 - in progress",
             "url": "http://www.ourhealthyday.com/",
             "description": "HTML, CSS, JavaScript, WordPress.",
-            "images": ["images/ourhealthyday.gif",]
+            "images": ["images/ourhealthyday.gif"]
         },
         {
             "title": "MimiCom24",
@@ -318,6 +318,8 @@ var projects = {
 
             $("#projects").append(HTMLprojectStart);
 
+            
+
             // In JavaScript, for-in loops can be used for objects, but should not be used for arrays. This is because the for-in loop passes the keys of each property. Array values do not have any keys.
             /* for(var proj in projects.projects) {
      
@@ -341,7 +343,7 @@ var projects = {
                 var projectDates = HTMLprojectDates.replace(data, proj.dates);
                 var projectDescription = HTMLprojectDescription.replace(data, proj.description);
                 var projectImg = HTMLprojectImage.replace(data, proj.images);
-
+               
 
                 $("#projects").append(myProject);
                 $("#projects").append(projectDates);
@@ -349,7 +351,10 @@ var projects = {
                 $("#projects").append(projectImg);
 
             });
-        }
+
+                
+
+         }
     }
 };
 
