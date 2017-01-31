@@ -342,16 +342,21 @@ var projects = {
                 var myProject = _project.replace("#", proj.url);
                 var projectDates = HTMLprojectDates.replace(data, proj.dates);
                 var projectDescription = HTMLprojectDescription.replace(data, proj.description);
-                var projectImg = HTMLprojectImage.replace(data, proj.images);
+                //var projectImg = HTMLprojectImage.replace(data, proj.images);
                
 
                 $("#projects").append(myProject);
                 $("#projects").append(projectDates);
                 $("#projects").append(projectDescription);
-                $("#projects").append(projectImg);
+                //$("#projects").append(projectImg);
 
             });
+                images.forEach(function(img){
+                        var projectImg = HTMLprojectImage.replace(data, img.images);
+                  $("#projects").append(projectImg);
 
+                     
+           });
                 
 
          }
