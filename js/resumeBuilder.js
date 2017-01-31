@@ -342,23 +342,17 @@ var projects = {
                 var myProject = _project.replace("#", proj.url);
                 var projectDates = HTMLprojectDates.replace(data, proj.dates);
                 var projectDescription = HTMLprojectDescription.replace(data, proj.description);
-                //var projectImg = HTMLprojectImage.replace(data, proj.images);
-               
+            for (var x = 0; x < proj.images.length; x++){
+                var projectImg = HTMLprojectImage.replace(data, proj.images[x]);
+            }
 
                 $("#projects").append(myProject);
                 $("#projects").append(projectDates);
                 $("#projects").append(projectDescription);
-                //$("#projects").append(projectImg);
+                $("#projects").append(projectImg);
 
-            });
-                images.forEach(function(img){
-                        var projectImg = HTMLprojectImage.replace(data, img.images);
-                  $("#projects").append(projectImg);
-
-                     
-           });
-                
-
+            });      
+          
          }
     }
 };
