@@ -42,8 +42,8 @@ var bio = {
         var myTwitter = myTwitterUrl.replace("%data%", bio.contacts.twitter);
         $("#topContacts, #footerContacts").append(myTwitter);
         //$("#footerContacts").append(myTwitter);
-
-        var myLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+        var myLocationUrl =HTMLlocation.replace("#","http://slavo7.github.io/#lets-connect");
+        var myLocation = myLocationUrl.replace("%data%", bio.contacts.location);
         $("#topContacts, #footerContacts").append(myLocation);
         //$("#footerContacts").append(myLocation);
 
