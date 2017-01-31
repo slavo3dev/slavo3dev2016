@@ -10,7 +10,8 @@ var bio = {
         "urlEmail":"mailto:slavo@mimicom24.com?Subject=Hello%20again",
         "github": "slavo7",
         "urlGitHub":"https://github.com/slavo7",
-        "twitter": "@OurHealthyDay",
+        "twitter": "OurHealthyDay",
+        "twitterUrl":"https://twitter.com/OurHealthyDay",
         "location": "Miami, FL"
     },
     "welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
@@ -37,8 +38,8 @@ var bio = {
         var myGithub = myGitHubUrl.replace(data, bio.contacts.github);
         $("#topContacts, #footerContacts").append(myGithub);
         ///$("#footerContacts").append(myGithub);
-
-        var myTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+        var myTwitterUrl = HTMLtwitter.replace("#", bio.contacts.twitterUrl);
+        var myTwitter = myTwitterUrl.replace("%data%", bio.contacts.twitter);
         $("#topContacts, #footerContacts").append(myTwitter);
         //$("#footerContacts").append(myTwitter);
 
