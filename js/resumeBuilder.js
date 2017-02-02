@@ -207,7 +207,7 @@ var work = {
 
     "jobs": [{
             "employer": "MimiCom24",
-            "title": "Founder/Web Developer",
+            "title": "Web Developer",
             "location": "Miami, Fl",
             "dates": "in progress",
             "url": "http://www.mimicom24.com/",
