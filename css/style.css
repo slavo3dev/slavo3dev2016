@@ -240,5 +240,13 @@ span {
 
 a:hover { 
 
-    background-color: darkred;
+    background-color: seagreen;
+    color: white;
+    font-size: 18px;
+}
+
+.buttonPadding {
+
+   margin-right: 5px;
+   background-color: seagreen;
 }

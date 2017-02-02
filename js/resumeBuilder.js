@@ -391,5 +391,14 @@ $(document).click(function (loc) {
         }
       }, 500);
     }
+// HIDE ELEMENTES ON THE PAGE :)
 
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#workExperience").toggle();
+    });
+    $("#show").click(function(){
+        $("#workExperience").show();
+    });
+});
  
