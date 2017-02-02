@@ -369,12 +369,12 @@ projects.display();
 /* adding div for google map */
 $("#mapDiv").append(googleMap);
 
-
+/*
 $(document).click(function (loc) {
     var x = loc.pageX;
     var y = loc.pageY;
     logClicks(x, y);
-});
+}); */
 
 
 //  ----- scrolling message loop -----
@@ -393,7 +393,7 @@ $(document).click(function (loc) {
     }
 // HIDE ELEMENTES ON THE PAGE :)
 
-$(document).ready(function(){
+$("#workExperience").ready(function(){
     $("#hide").click(function(){
         $("#workExperience").toggle();
     });
