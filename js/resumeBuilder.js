@@ -393,7 +393,7 @@ $(document).click(function (loc) {
     }
 // HIDE ELEMENTES ON THE PAGE :)
 
-$("#workExperience").ready(function(){
+$(document).ready(function(){
     $("#hide").click(function(){
         $("#workExperience").toggle();
     });
