@@ -395,7 +395,7 @@ $(document).click(function (loc) {
 
 $(document).ready(function(){
     $("#hide").click(function(){
-        $("#workExperience").toggle();
+        $("#workExperience").toggle(1500);
     });
     $("#show").click(function(){
         $("#workExperience").show();
