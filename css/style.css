@@ -243,7 +243,7 @@ a:hover {
     background-color: seagreen;
     color: white;
     font-size: 17px;
-    transition:font-size .2s ease-in;
+    transition:font-size .5s ease-in;
 }
 
 .buttonPadding {
