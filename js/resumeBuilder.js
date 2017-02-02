@@ -395,10 +395,27 @@ $(document).click(function (loc) {
 
 $(document).ready(function(){
     $("#hide").click(function(){
-        $("#workExperience").toggle(1500);
+        $("#workExperience").toggle(2000);
     });
     $("#show").click(function(){
         $("#workExperience").show();
     });
 });
- 
+
+// Hide projects
+
+$(document).ready(function(){
+    $("#projectsButton").click(function(){
+        $("#projects").toggle(2000);
+    });
+});
+
+// Hide education
+
+$(document).ready(function(){
+    $("#educationButton").click(function(){
+
+        $("#education").toggle(2000);
+
+    });
+});
