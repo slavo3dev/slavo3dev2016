@@ -252,5 +252,8 @@ a:hover {
    background-color: seagreen;
 }
 
-
+.toshow
+{
+    display: none;
+}
 
