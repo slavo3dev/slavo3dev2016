@@ -87,7 +87,7 @@ var education = {
     "onlineCourses": [
 
         {
-            "title": "Microsoft Certified Proffesional",
+            "title": "Microsoft Certified Professional",
             "school": "Microsoft",
             "dates": "05-2008",
             "url": "https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx"
