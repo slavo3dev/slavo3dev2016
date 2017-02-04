@@ -22,7 +22,7 @@ var bio = {
         var myName = HTMLheaderName.replace(data, bio.name);
         $("#name-title").append(myName);
         var myRole = HTMLheaderRole.replace(data, bio.role);
-        $("#name-title").append(myRole);
+        $("#name-role").append(myRole);
         var welcomeMessage = HTMLwelcomeMsg.replace(data, bio.welcomeMessage);
         $("#header").append(welcomeMessage);
 
