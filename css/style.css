@@ -263,9 +263,10 @@ hr {
     border: none;
     height: 5px;
     color: #bcbbbb; /* old IE */
-    background-color: #bcbbbb; /* Modern Browsers */
+    background-color: white; /* Modern Browsers */
     margin-top: 0.2em;
     margin-bottom: 2.2em;
+    
 }
 
 .text-thin {
