@@ -1,6 +1,6 @@
 
-var HTMLheaderName = '<h1 id="name" class="col-xs-12">%data%</h1>';
-var HTMLheaderRole = '<span id="work-title" class="col-xs-12">%data%</span><hr>';
+var HTMLheaderName = '<h1 id="name"">%data%</h1>';
+var HTMLheaderRole = '<span id="work-title">%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<a href="#"><li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li></a>';
