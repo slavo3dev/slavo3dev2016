@@ -223,7 +223,7 @@ span {
 
 #map {
   display: block;
-  height: 100%;
+  height: auto;
   margin: 0 5%;
 }
 
