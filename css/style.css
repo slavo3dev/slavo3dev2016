@@ -259,3 +259,48 @@ a:hover {
     display: none;
 }
 
+hr {
+    border: none;
+    height: 5px;
+    color: #bcbbbb; /* old IE */
+    background-color: #bcbbbb; /* Modern Browsers */
+    margin-top: 0.2em;
+    margin-bottom: 2.2em;
+}
+
+.text-thin {
+    height: 45px;
+    font-weight: 100;
+    font-size: 3em;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.text-muted {
+    color: #bcbbbb;
+}
+.colored {
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+  .profileFull {
+    text-align: center;
+  }
+
+  .logoPic {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.857em;
+  }
+}
+
+.profileJob {
+  margin: 5px;
+  font-size: 1em;
+}
