@@ -293,6 +293,13 @@ var projects = {
             "images": ["images/ourhealthyday.gif"]
         },
         {
+            "title": "Arcade Game ",
+            "dates": "Jun, 2016 - July, 2016",
+            "url": "http://www.mimicom24.com/arcadegame.html",
+            "description": "HTML, CSS, jQuery, JavaScript, Bootstrap",
+            "images": ["images/arcadegame.png","images/arcadegame.png" ]
+        },
+        {
             "title": "MimiCom24",
             "dates": "Jun, 2016 - in progress",
             "url": "http://www.mimicom24.com/",
