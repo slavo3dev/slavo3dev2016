@@ -432,12 +432,15 @@ $(document).ready(function(){
 
 var list = document.querySelectorAll("li");
 
-for (var = 0; i < list.length; i++){
+for (var i = 0; i < list.length; i++){
  list[i].addEventListener("mouseover", function(){ 
    
    this.classList.add("selected");
 
  });
 
+list[i].addEventListener("mouseout", function(){
+   this.classList.remove("selected");
+});
 
 }
