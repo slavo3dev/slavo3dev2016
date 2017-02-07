@@ -305,3 +305,10 @@ hr {
   margin: 5px;
   font-size: 1em;
 }
+
+.selected {
+  
+  color: darkred; 
+  transition:font-size .5s ease-in;
+  font-size: 17px;   
+}

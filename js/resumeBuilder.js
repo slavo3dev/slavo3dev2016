@@ -426,3 +426,18 @@ $(document).ready(function(){
 
     });
 });
+
+
+// event listener 
+
+var list = document.querySelectorAll("li");
+
+for (var = 0; i < list.length; i++){
+ list[i].addEventListener("mouseover", function(){ 
+   
+   this.classList.add("selected");
+
+ });
+
+
+}
