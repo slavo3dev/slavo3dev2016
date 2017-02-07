@@ -309,6 +309,6 @@ hr {
 .selected {
   
   color: darkred; 
-  transition:font-size .5s ease-in;
-  font-size: 17px;   
+  transition:font-size .3s ease-in;
+  font-size: 22px;   
 }
