@@ -8,14 +8,14 @@ var bio = {
         "mobileUrl": "tel:15612836675",
         "email": "slavo@mimicom24.com",
         "urlEmail":"mailto:slavo@mimicom24.com?Subject=Hello%20again",
-        "github": "slavo7",
-        "urlGitHub":"https://github.com/slavo7",
+        "github": "slavo3dev",
+        "urlGitHub":"https://github.com/slavo3dev",
         "twitter": "OurHealthyDay",
-        "twitterUrl":"https://twitter.com/OurHealthyDay",
+        "twitterUrl":"https://twitter.com/slavo3dev",
         "location": "Miami, FL"
     },
     "welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
-    "skills": ["JavaScript", "jQuery", "HTML", "CSS", "Bootstrap", "Angular", "Python", "Swift"],
+    "skills": ["JavaScript", "React", "jQuery", "HTML", "CSS", "Bootstrap", "Angular", "Python", "Swift"],
     "biopic": "images/profile.jpg",
     "display": function () {
 
