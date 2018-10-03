@@ -15,7 +15,7 @@ var bio = {
         "location": "Miami, FL"
     },
     "welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
-    "skills": ["JavaScript", "React", "jQuery", "HTML", "CSS", "Bootstrap", "Angular", "Python", "Swift"],
+    "skills": ["JavaScript", "React", "jQuery", "HTML", "CSS", "Bootstrap", "Python", "Dapps"],
     "biopic": "images/profile.jpg",
     "display": function () {
 
@@ -85,7 +85,12 @@ var education = {
     ],
 
     "onlineCourses": [
-
+        {
+            "title": "React Developer",
+            "school": "Udacity",
+            "dates": "10-2018",
+            "url": "#"
+        },
         {
             "title": "Microsoft Certified Professional",
             "school": "Microsoft",
