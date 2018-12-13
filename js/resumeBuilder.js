@@ -10,12 +10,16 @@ var bio = {
         "urlEmail":"mailto:slavo@mimicom24.com?Subject=Hello%20again",
         "github": "slavo3dev",
         "urlGitHub":"https://github.com/slavo3dev",
-        "twitter": "OurHealthyDay",
+        "linkedin": "Slavo Popovic",
+        "urlLinkedin":"https://www.linkedin.com/in/savoljubpopovic/",
+        "Instagram": "s3dev",
+        "urlInstagram":"https://www.instagram.com/s3dev/",
+        "twitter": "slavo3dev",
         "twitterUrl":"https://twitter.com/slavo3dev",
         "location": "Miami, FL"
     },
     "welcomeMessage": "Discipline is the bridge between goals and accomplishment.",
-    "skills": ["JavaScript", "React", "jQuery", "HTML", "CSS", "Bootstrap", "Python", "Dapps"],
+    "skills": ["JavaScript", "React", "Node", "C++", "CSS", "Blockchain", "Python", "Dapps"],
     "biopic": "images/profile.jpg",
     "display": function () {
 
