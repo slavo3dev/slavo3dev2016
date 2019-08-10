@@ -1,4 +1,4 @@
-# slavo7.github.io
+slavo7.github.io
 project resume
 HTML, CSS, BootStrap, JQuery, JavaScript
 
