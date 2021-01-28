@@ -1,4 +1,4 @@
-slavo7.github.io
+visit: http://slavo3dev.github.io/slavo3dev/
 project resume
 HTML, CSS, BootStrap, JQuery, JavaScript
 
